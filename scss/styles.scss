@@ -1,0 +1,90 @@
+@import "./variables";
+@import "./customfonts";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem
+}
+
+/*Body*/
+
+.main-body-container {
+  background-image: $backgroundcolor;
+  height: 100vh;
+}
+
+/*Navigation Bar*/ 
+
+.header-container {
+  margin-left: 20px;
+
+a {
+  text-decoration: none;
+  font-family: $headerfontfam;
+  font-size: 2rem;
+  color: #000;
+  font-weight: bold;
+}
+}
+
+/*Home Section*/ 
+
+.home-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-top: 50px;
+}
+
+
+/*input field*/ 
+
+.inputs-container {
+  margin-left: 8%;
+  display: flex;
+  margin-top: 50px;
+
+  .btn-container {
+
+  .add-btn{
+    // padding: 15px 35px;
+    border-radius: 7%;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+
+  &:hover{
+    background-color: #000;
+    color: #fff;
+    transition: all 0.3s ease; 
+  }
+
+  }
+  }
+
+}
+
+/*New elements section*/ 
+
+.new-elements-main-container{
+  display: flex;
+  margin-top: 50px;
+  
+}
+
+.new-Elements-container {
+  
+  width: 50%;
+  
+}
+
+
+
+.total-container {
+  width: 50%;
+
+}
