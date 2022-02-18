@@ -10,12 +10,14 @@
 /*Body*/
 .main-body-container {
   background-image: linear-gradient(#6BBDD6, #948052);
-  height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 /*Navigation Bar*/
 .header-container {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 .header-container a {
   text-decoration: none;
@@ -26,43 +28,114 @@
 }
 
 /*Home Section*/
-.home-container {
+.home {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+}
+
+.home-container {
+  border: 1px solid #000;
+  padding: 13px 13px 13px 13px;
 }
 
 /*input field*/
-.inputs-container {
-  margin-left: 8%;
-  display: flex;
-  margin-top: 50px;
+.inputs-sec {
+  margin-top: 40px;
 }
-.inputs-container .btn-container .add-btn {
+
+.inputs-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inputs-container .inputs {
+  margin: 3px 3px 3px 3px;
+}
+.inputs-container input {
+  width: 75%;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 17px;
+}
+.btn-container .add-btn {
   border-radius: 7%;
+  padding: 10px 10px 10px 10px;
   border: none;
   background-color: #fff;
   color: #000;
   cursor: pointer;
   font-weight: bold;
 }
-.inputs-container .btn-container .add-btn:hover {
-  background-color: #000;
-  color: #fff;
-  transition: all 0.3s ease;
+.btn-container .add-btn:hover {
+  background-image: linear-gradient(to right, #6BBDD6, #948052);
+  color: #000;
+  transition: all 0.5s ease;
+  box-shadow: 3px 3px 12px #333;
 }
 
 /*New elements section*/
 .new-elements-main-container {
+  border: 1px solid #000;
   display: flex;
   margin-top: 50px;
+  height: 100vh;
+  position: relative;
 }
 
 .new-Elements-container {
-  width: 50%;
+  border: 1px solid #000;
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  top: 8%;
+}
+.new-Elements-container .date-element {
+  border: 1px solid #000;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+}
+.new-Elements-container .item-element {
+  border: 1px solid #000;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 5%;
+  left: 30%;
+}
+.new-Elements-container .amount-element {
+  border: 1px solid #000;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 5%;
+  left: 90%;
 }
 
 .total-container {
-  width: 50%;
+  border: 1px solid #000;
+  width: 20%;
+  height: 5vh;
+  position: absolute;
+  top: 2.3%;
+  left: 67%;
 }/*# sourceMappingURL=styles.css.map */

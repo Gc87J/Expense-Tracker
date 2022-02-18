@@ -12,13 +12,13 @@
 
 .main-body-container {
   background-image: $backgroundcolor;
-  height: 100vh;
+  height: fit-content;
 }
 
 /*Navigation Bar*/ 
 
 .header-container {
-  margin-left: 20px;
+  margin-left: 10px;
 
 a {
   text-decoration: none;
@@ -30,27 +30,58 @@ a {
 }
 
 /*Home Section*/ 
-
-.home-container {
+.home {
   display: flex;
   justify-content: center; 
   align-items: center;
-  margin-top: 50px;
+}
+
+.home-container {
+  border: 1px solid #000;
+  // width:35%;
+  padding: 13px 13px 13px 13px;
+ 
+  // margin-top: 50px;
+  
 }
 
 
 /*input field*/ 
+.inputs-sec {
+  // border: 1px solid #000; 
+  // margin-right: 25%;
+  margin-top: 40px;
+  
+}
 
 .inputs-container {
-  margin-left: 8%;
   display: flex;
-  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  
+
+
+.inputs {
+  margin: 3px 3px 3px 3px;
+}
+
+input {
+  width: 75%;
+}
+
+}
+  
 
   .btn-container {
+    // margin-left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17px;
 
-  .add-btn{
-    // padding: 15px 35px;
+    .add-btn{
     border-radius: 7%;
+    padding: 10px 10px 10px 10px;
     border: none;
     background-color: #fff;
     color: #000;
@@ -58,33 +89,87 @@ a {
     font-weight: bold;
 
   &:hover{
-    background-color: #000;
-    color: #fff;
-    transition: all 0.3s ease; 
+    background-image: linear-gradient( to right, #6BBDD6,#948052);
+    color: #000;
+    transition: all 0.5s ease; 
+    box-shadow: 3px 3px 12px #333;
   }
 
   }
   }
 
-}
+
 
 /*New elements section*/ 
 
 .new-elements-main-container{
+  border: 1px solid #000;
   display: flex;
   margin-top: 50px;
+  height: 100vh;
+  position: relative;
   
 }
 
 .new-Elements-container {
+  border: 1px solid #000;
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  top: 8%;
   
-  width: 50%;
-  
+
+.date-element {
+  border: 1px solid #000;
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+}
+
+
+.item-element {
+  border: 1px solid #000;
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 5%;
+  left: 30%;
+}
+
+
+.amount-element {
+  border: 1px solid #000;
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 5%;
+  left: 90%;
+
+}
+
+
+
 }
 
 
 
 .total-container {
-  width: 50%;
+  border: 1px solid #000;
+  width: 20%;
+  height: 5vh;
+  position: absolute;
+  top: 2.3%;
+  left: 67%;  
+
+
+
 
 }
+
+
+// #testing::after {
+//   content: "\a";
+//   white-space: pre;
+// }

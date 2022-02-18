@@ -33,39 +33,56 @@
     </header>
     <section class="home">
       <div class="home-container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta debitis esse commodi? Totam, recusandae maxime! Quo expedita doloribus asperiores culpa eligendi facere deserunt voluptatem. Incidunt minus nobis eveniet a culpa?</p>
+        <p><span id="testing">This is a tracker that will take the date you enter the expense,
+          the expense entered,</span>and the amount entered. It calculate all   
+          the expense you have then show you your total expense.</p>
       </div>
     </section>
 
-    <section class="inputs">
-      <div class="inputs-container">
-        
-          <label for="date">Date</label>
-          <input type="date">
+    <section class="inputs-sec">
 
-          <label for="item-n">Item name</label>
-          <input type="text">
+      
 
-          <label for="num"> Amount</label>
-          <input type="number">
-          <div class="btn-container">
-            <button class="add-btn"><i class="fa-solid fa-plus"></i> Add to list</button>
+        <div class="inputs-container">
+
+          
+            <div class="inputs"><p> Date: </p>
+              <input type="text">
+            </div>
             
-          </div>
+
+            <div class="inputs"><p> Item name: </p>
+              <input type="text"></div>
+              
+
+              <div class="inputs"><p> Amount: </p>
+                <input type="number"></div>
+        </div>
+            
+              <div class="btn-container">
+                <button class="add-btn"><i class="fa-solid fa-plus"></i>Add to list</button>
+              
+            </div>
         
-      </div>
+
+          
+        
+     
     </section>
 
     <section class="new-Elements">
       <div class="new-elements-main-container">
 
         <div class="new-Elements-container">
-          <div class="newelements"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sapiente quibusdam, ullam ut debitis iure praesentium molestiae ea id ducimus perspiciatis eveniet deserunt odit esse, quis natus voluptates repudiandae facilis.</p></div>
+          <div class="date-element"></div>
+          <div class="item-element"></div>
+          <div class="amount-element"></div>
         </div>
 
-        <div class="total-container">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sapiente quibusdam, ullam ut debitis iure praesentium molestiae ea id ducimus perspiciatis eveniet deserunt odit esse, quis natus voluptates repudiandae facilis.</p>
 
+
+        <div class="total-container">
+          
           <div class="total">
             <p id="final-amount"></p>
           </div>
