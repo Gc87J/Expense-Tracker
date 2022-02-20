@@ -22,6 +22,20 @@ addToBtn.addEventListener("click", ()=> {
 
     return alert("Please fill in empty box");
   }
+
+  else if (dateField.value === "") {
+    return alert ("Please enter date");
+  }
+
+  else if (itemNameField === "") {
+    return alert("Please enter expense");
+  }
+
+  else if (itemAmount === "") {
+    return alert("Please enter an amount")
+  }
+  
+
   const newContainer = document.createElement("div");
   newContainer.classList.add("new-container");
 
@@ -42,15 +56,12 @@ addToBtn.addEventListener("click", ()=> {
   thirdField.classList.add("amount-element");
   thirdField.textContent = itemAmount.value;
   newContainer.appendChild(thirdField);
+  
 
 
 
-
-
- 
 
   dateField.value = "";
   itemNameField.value = "";
   itemAmount.value = "";
 });
-
