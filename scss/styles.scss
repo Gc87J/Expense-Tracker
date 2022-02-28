@@ -67,6 +67,8 @@ a {
 
 input {
   width: 75%;
+  font-size: .8rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 }
@@ -139,7 +141,7 @@ input {
       // border: 1px solid #000;
       height: fit-content;
       width: fit-content;
-      font-weight: bold;
+      // font-weight: bold;
       color: #000;
       background-color: #fff ;
       border-radius: 2px;
@@ -187,7 +189,7 @@ input {
 
 
 .total-container {
-  // border: 1px solid #000;
+  border: 1px solid #000;
   width: 30%;
   height: 5vh;
   position: absolute;
